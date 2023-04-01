@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#18FFFF"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EJEMPLO CAMARA"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:background="#BDA4F6"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="380dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fot" />
+
+    <Button
+        android:id="@+id/Tomar_Foto"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#63C6F3"
+        android:drawableRight="@android:drawable/ic_menu_camera"
+        android:text="Tomar Foto"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="normal|bold"
+        app:iconTint="#000000" />
+</LinearLayout>
